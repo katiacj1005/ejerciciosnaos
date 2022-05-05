@@ -1,11 +1,41 @@
 {
-  "name": "exercisesnaos",
+  "name": "katia-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --open --mode development",
+    "build": "rd /s /q dist && webpack --config webpack.config.js --mode production",
+    "clear": "rd /s /q node_modules",
+    "remove-nodemodules": "rd /s /q node_modules",
+    "install-dependencias": "npm install --only=prod",
+    "install-devDependencias": "npm install --also=dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git-codecommit.us-east-1.amazonaws.com/v1/repos/web_inicial"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.16.8",
+    "@babel/preset-env": "^7.16.8",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "terser-webpack-plugin": "^5.3.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2",
+    "webpack-merge": "^5.8.0",
+    "workbox-webpack-plugin": "^6.4.2"
+  },
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.6.0",
+    "lit": "^2.1.1",
+    "promise-polyfill": "^8.2.1"
+  }
 }

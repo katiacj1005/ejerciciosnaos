@@ -1,28 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>excercises</title>
+    <meta name="generator" content="KATIA">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>KATIA APP</title>
+    <meta name="description" content="Aplicación Katia">
+
+    <base href="/">
+
+    <link rel="icon" href="images/manifest/portal-icon-48x48.png">
+    <link rel="shortcut icon" sizes="32x32" href="images/manifest/portal-icon-32x32.png">  
+
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="#000000">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="KATIA">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="KATIA">
+
+  <link rel="apple-touch-icon" href="images/manifest/portal-icon-48x48.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/manifest/portal-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/manifest/portal-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/manifest/portal-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/manifest/portal--icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/manifest/portal-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/manifest/portal-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/manifest/portal-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/manifest/portal-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/manifest/portal-icon-180x180.png">
+
+    <meta name="msapplication-TileImage" content="images/manifest/portal-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" as="style" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <style>
+
+      body {
+        margin: 0;
+        background-color: #ECEFF1;
+        font-family: 'Roboto', sans-serif;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+    </style>
   </head>
   <body>
-    <script src="exercises.js"> </script>
-
-
-    <div class="container">
-          <h1>The Login </h1>
-
-        <form>
-            <label for="fMail"> e-mail:</label>
-            <input type="text" id="iMail" name="imail"><br><br>
-
-            <label for="password"> Password:</label>
-            <input type="text" id="iPassword" name="ipassword">
-            
-            <button id="btnLogin" onclick="data(event)"> Login</button>
-        </form>
-      </div>
+    <my-app></my-app>
+    <noscript>
+      Por favor, active JavaScript para ver este sitio web.
+    </noscript>
     
-
-    
+    <!-- Load webcomponents-loader.js to check and load any polyfills your browser needs -->
+    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <simple-greeting names="katia"></simple-greeting>
   </body>
 </html>
+
+
+
