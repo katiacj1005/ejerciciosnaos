@@ -34,6 +34,8 @@
     "workbox-webpack-plugin": "^6.4.2"
   },
   "dependencies": {
+    "@material/mwc-button": "^0.26.1",
+    "@material/mwc-textfield": "^0.26.1",
     "@webcomponents/webcomponentsjs": "^2.6.0",
     "lit": "^2.1.1",
     "promise-polyfill": "^8.2.1"

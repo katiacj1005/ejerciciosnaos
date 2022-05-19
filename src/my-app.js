@@ -1,7 +1,6 @@
 //librerias de terceros
 import { LitElement, html, css } from 'lit';
 import "./ejemplo-1";
-import "./welcome-2";
 
 class ClaseMyApp extends LitElement {
 
@@ -17,17 +16,11 @@ class ClaseMyApp extends LitElement {
 
   }
 
-
-
   render() {
-
-    
-
     return html`
 
-    <ejemplo-1></ejemplo-1>
-    <welcome-2 names="xxc"  ></welcome-2>
-
+    <ejemplo-1> </ejemplo-1>
+    
     `;
 
   }
