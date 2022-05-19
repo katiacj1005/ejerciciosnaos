@@ -2,6 +2,7 @@
 import { LitElement, html, css } from 'lit'
 import '@material/mwc-textfield/mwc-textfield';
 import '@material/mwc-button/mwc-button';
+import { data } from "./funciones.js";
 
 class ClaseEjemplo1 extends LitElement {
 
@@ -28,6 +29,9 @@ class ClaseEjemplo1 extends LitElement {
 
   constructor() {
     super();
+    this.password = "";
+    this.email = ""; 
+
     
   }
 
@@ -35,8 +39,8 @@ class ClaseEjemplo1 extends LitElement {
   render() {
     return html`
     <h1 class="estilo">hi login whit lit</h1>
-    <mwc-textfield id="email"  label="email" @input=${this.eventEmail} ></mwc-textfield>
-    <mwc-textfield  id="password" label="password" @input=${this.eventPassword} ></mwc-textfield>
+    <mwc-textfield id="email"   label="email" @input=${this.eventEmail} ></mwc-textfield>
+    <mwc-textfield id="password" label="password" @input=${this.eventPassword} ></mwc-textfield>
     <mwc-button id="button" @click=${this.eventButton} outlined label="Login"></mwc-button>
     `
   }
@@ -54,7 +58,10 @@ class ClaseEjemplo1 extends LitElement {
     console.log(this.email, this.password);
 
 
-    //data(this.password, thi.email)
+       data(this.password, this.email)
+
+       this.dispatchEvent(new CustomEvent("evento-isabel", {bubbles: true, composed: true, detail: "hola katia" }));
+
   }
   
 

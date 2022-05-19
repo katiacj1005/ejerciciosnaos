@@ -1,6 +1,7 @@
 //librerias de terceros
 import { LitElement, html, css } from 'lit';
 import "./ejemplo-1";
+import "./event-1";
 
 class ClaseMyApp extends LitElement {
 
@@ -11,17 +12,20 @@ class ClaseMyApp extends LitElement {
       //aquí van los estilos
       `
     ]
-
-
-
   }
 
   render() {
     return html`
 
-    <ejemplo-1> </ejemplo-1>
-    
+    <ejemplo-1 @evento-isabel=${this.evento}  > </ejemplo-1>
+    <event-1></event-1>
     `;
+
+  }
+
+  evento(e) {
+    console.log(e.detail);
+
 
   }
 
