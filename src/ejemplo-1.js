@@ -39,9 +39,13 @@ class ClaseEjemplo1 extends LitElement {
   render() {
     return html`
     <h1 class="estilo">hi login whit lit</h1>
+
     <mwc-textfield id="email"   label="email" @input=${this.eventEmail} ></mwc-textfield>
-    <mwc-textfield id="password" label="password" @input=${this.eventPassword} ></mwc-textfield>
-    <mwc-button id="button" @click=${this.eventButton} outlined label="Login"></mwc-button>
+    <mwc-textfield id="password" label="password" @input=${this.eventPassword} >
+  </mwc-textfield>
+
+    <mwc-button id="button" @click=${this.eventButton} outlined label="Login">
+  </mwc-button>
     `
   }
 

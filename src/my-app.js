@@ -2,6 +2,7 @@
 import { LitElement, html, css } from 'lit';
 import "./ejemplo-1";
 import "./event-1";
+import "./pending-tasks";
 
 class ClaseMyApp extends LitElement {
 
@@ -19,6 +20,7 @@ class ClaseMyApp extends LitElement {
 
     <ejemplo-1 @evento-isabel=${this.evento}  > </ejemplo-1>
     <event-1></event-1>
+    <pending-task></pending-task>
     `;
 
   }
